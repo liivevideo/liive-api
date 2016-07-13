@@ -1,7 +1,7 @@
 mongoose = require('mongoose')
 Resource = require('resourcejs')
 
-module.exports = (app, model,name) ->
+module.exports = (app, model, name) ->
     resource = Resource(app, '', name, model).patch({
         before: (req, res, next) ->
             traverse = require('helpers/traverse')

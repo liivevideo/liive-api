@@ -82,10 +82,7 @@
     Domains: Domains,
     Portals: Portals,
     Devices: Devices,
-    Accounts: Accounts,
-    Archives: Archives,
-    Connections: Connections,
-    People: People
+    Accounts: Accounts
   };
 
   swagger = require('./controllers/swagger')(app, Resources, '/api', config);

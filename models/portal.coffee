@@ -3,15 +3,10 @@ Schema = require('mongoose').Schema
 #RouteSchema = require('./routes')
 ObjectId = Mongoose.Schema.Types.ObjectId
 
-NodeSchema = new Schema(
+PortalSchema = new Schema(
     {
-        transit: Boolean
-        storage: Boolean
-        leaf: Boolean
-        consolidator: Boolean
-        deconsolidator: Boolean
-        routes: [{ type: ObjectId, ref: 'Route' }]
+        portalId: String
     },
     { strict: false }
 )
-module.exports = { model: Mongoose.model("Node", NodeSchema), schema: NodeSchema }
+module.exports = { model: Mongoose.model("Portal", PortalSchema), schema: PortalSchema }
