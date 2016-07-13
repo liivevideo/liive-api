@@ -52,9 +52,9 @@ Resources = {
   Portals:Portals
   Devices:Devices
   Accounts:Accounts
-#  Archives:Archives
-#  Connections:Connections
-#  People:People
+  Archives:Archives
+  Connections:Connections
+  People:People
 }
 
 swagger = require('./controllers/swagger')(app, Resources, '/api', config)
