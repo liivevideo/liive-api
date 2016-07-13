@@ -34,11 +34,11 @@
     specification = {
       swagger: '2.0',
       info: {
-        description: 'Liive API',
+        description: 'Liive Video API',
         version: config.version,
-        title: 'An API for a live video portal',
+        title: 'An API for managing live video portals',
         contact: {
-          name: 'Liive'
+          name: "liive.io"
         }
       },
       host: config.host,
