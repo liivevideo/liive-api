@@ -32,11 +32,11 @@ module.exports = (app, resources, spec='/spec', config) ->
     specification = {
         swagger: '2.0',
         info: {
-            description: 'LiiveVideo API',
+            description: 'Liive API',
             version: config.version,
-            title: 'API for live video portal',
+            title: 'An API for a live video portal',
             contact: {
-                name: 'Robb Lovell'
+                name: 'Liive'
             },
 #            license: {
 #                name: 'MIT',
