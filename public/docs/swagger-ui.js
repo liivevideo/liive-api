@@ -4489,7 +4489,7 @@ Operation.prototype.setContentTypes = function (args, opts) {
         consumes = opts.requestContentType;
       } else if (definedFileParams.length > 0) { // if a file, must be multipart/form-data
         consumes = 'multipart/form-data';
-      } else {                                   // default to x-www-from-urlencoded
+      } else {                                   // default to x-www.coffee-from-urlencoded
         consumes = 'application/x-www-form-urlencoded';
       }
     }
@@ -14532,7 +14532,7 @@ jQuery.extend({
 		global: true,
 		processData: true,
 		async: true,
-		contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+		contentType: "application/x-www.coffee-form-urlencoded; charset=UTF-8",
 		/*
 		timeout: 0,
 		data: null,
@@ -29495,7 +29495,7 @@ function serialize(obj) {
  request.serializeObject = serialize;
 
  /**
-  * Parse the given x-www-form-urlencoded `str`.
+  * Parse the given x-www.coffee-form-urlencoded `str`.
   *
   * @param {String} str
   * @return {Object}
@@ -30155,19 +30155,19 @@ Request.prototype.attach = function(field, file, filename){
  *         .send({ name: 'tj' })
  *         .end(callback)
  *
- *       // manual x-www-form-urlencoded
+ *       // manual x-www.coffee-form-urlencoded
  *       request.post('/user')
  *         .type('form')
  *         .send('name=tj')
  *         .end(callback)
  *
- *       // auto x-www-form-urlencoded
+ *       // auto x-www.coffee-form-urlencoded
  *       request.post('/user')
  *         .type('form')
  *         .send({ name: 'tj' })
  *         .end(callback)
  *
- *       // defaults to x-www-form-urlencoded
+ *       // defaults to x-www.coffee-form-urlencoded
   *      request.post('/user')
   *        .send('name=tobi')
   *        .send('species=ferret')
