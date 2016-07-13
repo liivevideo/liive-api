@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "archive.js",
+  "sourceRoot": "",
+  "sources": [
+    "archive.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;AAAA"
+}

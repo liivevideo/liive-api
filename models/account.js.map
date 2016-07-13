@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "account.js",
+  "sourceRoot": "",
+  "sources": [
+    "account.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;AAAA"
+}

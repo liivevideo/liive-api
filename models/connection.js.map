@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "connection.js",
+  "sourceRoot": "",
+  "sources": [
+    "connection.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;AAAA"
+}
