@@ -44,8 +44,7 @@ Archives = require('./controllers/archive')(app, archive.model, "Archives")
 connection= require('./models/connection')
 Connections = require('./controllers/device')(app, connection.model, "Connections")
 person= require('./models/person')
-People = require('./controllers/device')(app, person.model, "Persons")
-
+Persons = require('./controllers/device')(app, person.model, "Persons")
 
 Resources = {
   Domains:Domains
@@ -54,7 +53,7 @@ Resources = {
   Accounts:Accounts
   Archives:Archives
   Connections:Connections
-  People:People
+  Persons:Persons
 }
 
 swagger = require('./controllers/swagger')(app, Resources, '/api', config)
