@@ -36,7 +36,7 @@ Domains = require('./controllers/domain')(app, domain.model, "Domains")
 portal= require('./models/portal')
 Portals = require('./controllers/portal')(app, portal.model, "Portals")
 device= require('./models/device')
-Devices = require('./controllers/device')(app, device.model, "Device")
+Devices = require('./controllers/device')(app, device.model, "Devices")
 account= require('./models/account')
 Accounts = require('./controllers/account')(app, account.model, "Accounts")
 archive= require('./models/archive')
@@ -44,7 +44,7 @@ Archives = require('./controllers/archive')(app, archive.model, "Archives")
 connection= require('./models/connection')
 Connections = require('./controllers/device')(app, connection.model, "Connections")
 person= require('./models/person')
-People = require('./controllers/device')(app, person.model, "People")
+People = require('./controllers/device')(app, person.model, "Persons")
 
 
 Resources = {
