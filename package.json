@@ -6,7 +6,7 @@
     "url": "https://github.com/robblovell/liive-api.git"
   },
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "author": "robblovell",
   "scripts": {
