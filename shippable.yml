@@ -1,3 +1,7 @@
+env:
+  global:
+    - APP_NAME=shroudd-headland-1758
+
 language: node_js
 
 node_js:
@@ -5,14 +9,19 @@ node_js:
 
 build:
   ci:
-    - npm install
-    - ./node_modules/.bin/_mocha test
+    - npm test
 
-before_script: mkdir -p shippable/codecoverage
+before_script:
+  - npm install
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
+
+script:
+  - npm run-script test-shippable
 
 after_script:
-  - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
-  - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
+  - npm run-script test-coverage
+  - npm run-script shippable-cobertura
 
 notifications:
   email:
