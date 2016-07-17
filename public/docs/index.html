@@ -34,7 +34,7 @@
         url = decodeURIComponent(url[1]);
       } else if (window.location.origin != null && window.location.origin != undefined) {
         if (window.location.hostname == 'localhost')
-          url = window.location.protocol+"//"+window.location.hostname+":3000/api";
+          url = window.location.protocol+"//"+window.location.hostname+":"+window.location.port+"/api";
         else
           url = window.location.protocol+"//"+window.location.hostname+"/api";
       }
