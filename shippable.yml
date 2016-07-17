@@ -1,7 +1,7 @@
-language: node_js
+language: nodejs
 
-node_js:
-   - "4.2.3"
+nodejs:
+   - "0.10"
 
 build:
   ci:
