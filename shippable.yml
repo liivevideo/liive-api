@@ -1,19 +1,9 @@
-language: nodejs
+language: node_js
 
-nodejs:
-   - "0.10"
+node_js:
+  - 0.12
 
 build:
   ci:
     - npm install
     - npm test
-
-before_script: mkdir -p shippable/codecoverage
-
-after_script:
-  - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
-  - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
-
-notifications:
-  email:
-    - robb@liivevideo.com
