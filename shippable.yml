@@ -1,7 +1,15 @@
-nodejs:
-   - "6.2.2"
-language: nodejs
+language: node_js
+
+node_js:
+   - 6.2.2
+
+build:
+  ci:
+    - npm install
+    - npm test
+
 before_script: mkdir -p shippable/codecoverage
+
 after_script:
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
