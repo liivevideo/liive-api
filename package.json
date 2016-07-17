@@ -11,10 +11,10 @@
   "author": "robblovell",
   "scripts": {
     "start": "node ./bin/www",
-    "shippable-cobertura": "./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/",
     "test": "./node_modules/.bin/_mocha",
     "test-shippable": "mkdir -p shippable/testresults && mocha --reporter xunit ./test/* > shippable/testresults/result.xml",
-    "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
+    "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd"
+    "shippable-cobertura": "./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/",
   },
   "dependencies": {
     "bluebird": "^3.4.1",
