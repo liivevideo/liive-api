@@ -5,7 +5,7 @@
   config = {
     env: process.env.NODE_ENV || 'local',
     db: process.env.DB || "mongodb://localhost:27017",
-    port: process.env.PORT || '3000',
+    port: process.env.PORT || '3001',
     host: process.env.HOST || 'localhost',
     basepath: "/",
     scheme: process.env.SCHEME || 'https',
@@ -37,7 +37,7 @@
     default:
       config.db = "mongodb://localhost:27017/liive";
       config.basepath = "/";
-      config.host = "localhost:3000";
+      config.host = "localhost:3001";
       config.schemes = ['http'];
   }
 
