@@ -8,4 +8,4 @@ after_script:
 
 notifications:
   email:
-        - robb@liivevideo.com
+    - robb@liivevideo.com
