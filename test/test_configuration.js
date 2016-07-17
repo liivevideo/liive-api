@@ -9,7 +9,6 @@
   describe('Configuration', function() {
     return it('configures the application correctly.', function(done) {
       var config;
-      done();
       config = require('../config/configuration');
       config.env.should.be.equal('local');
       return done();
