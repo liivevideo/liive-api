@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "test_configuration.js",
+  "sourceRoot": "",
+  "sources": [
+    "test_configuration.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,MAAA,GAAS,OAAA,CAAQ,QAAR;;EACT,MAAA,GAAS,OAAA,CAAQ,QAAR;;EAET,QAAA,CAAS,eAAT,EAA0B,SAAA;WAEtB,EAAA,CAAG,uCAAH,EAA4C,SAAC,IAAD;AACxC,UAAA;MAAA,IAAA,CAAA;MACA,MAAA,GAAS,OAAA,CAAQ,yBAAR;MAET,MAAM,CAAC,GAAG,CAAC,MAAM,CAAC,EAAE,CAAC,KAArB,CAA2B,OAA3B;aACA,IAAA,CAAA;IALwC,CAA5C;EAFsB,CAA1B;AAHA"
+}
