@@ -38,14 +38,14 @@ integrations:
       on_failure: always  # options: [always|never|change] default: always
       on_start: never     # options: [always|never|change] default: always
 
-    - integrationName: Shippable-Slack
-      type: slack
+    - integrationName: CI-Notification
+      type: notification
       recipients:
-        - "#build"
+        - "#ci"
       branches:
         only:
           - master
           - develop
       on_success: always
       on_failure: always
-      on_start: never
+      on_start: always
