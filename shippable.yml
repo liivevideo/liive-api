@@ -25,7 +25,6 @@ build:
     - git push -f git@heroku.com:$APP_NAME-$BRANCH.git master
 
   on_failure:
-    - npm run-script test-coverage
     - npm run-script shippable-cobertura
 
 integrations:
