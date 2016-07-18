@@ -37,7 +37,7 @@ notifications:
     on_failure: always  # options: [always|never|change] default: always
     on_start: never     # options: [always|never|change] default: always
 
-  - integrationName: my_slack_integration
+  - integrationName: slack
     type: slack
     recipients:
       - "#ci"
