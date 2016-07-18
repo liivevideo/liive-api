@@ -18,7 +18,8 @@ script:
 after_script:
   - npm run-script test-coverage
   - npm run-script shippable-cobertura
-  - git push -f heroku master
+  - git remote add heroku https://git.heroku.com/$APP_NAME.git
+  - git push -f heroku $BRANCH
 
 notifications:
   email:
