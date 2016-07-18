@@ -39,7 +39,7 @@ integrations:
       on_start: never     # options: [always|never|change] default: always
 
     - integrationName: CI-Notification
-      type: notification
+      type: slack
       recipients:
         - "#ci"
       branches:
