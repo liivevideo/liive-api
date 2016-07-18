@@ -27,7 +27,7 @@ build:
 integrations:
   notifications:
     - integrationName: CINotification
-      type: notification
+      type: slack
       recipients:
         - "#ci"
       branches:
