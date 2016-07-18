@@ -22,7 +22,7 @@ build:
     - npm run-script shippable-cobertura
 
   on_success:
-    - git push -f git@heroku.com:$APP_NAME-$BRANCH.git $BRANCH
+    - git push -f git@heroku.com:$APP_NAME-$BRANCH.git master
 
 notifications:
   - integrationName: email
@@ -37,7 +37,7 @@ notifications:
     on_failure: always  # options: [always|never|change] default: always
     on_start: never     # options: [always|never|change] default: always
 
-  - integrationName: my_slack_integration
+  - integrationName: slack
     type: slack
     recipients:
       - "#ci"
