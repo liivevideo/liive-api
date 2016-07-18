@@ -24,22 +24,9 @@ build:
   on_success:
     - git push -f git@heroku.com:$APP_NAME-$BRANCH.git master
 
-integrations:
-  notifications:
-    - integrationName: CI-Notification
-      type: slack
-
 notifications:
   email:
     recipients:
       - robb@liivevideo.com
-
-    on_success: always  # options: [always|never|change] default: always
-    on_failure: always  # options: [always|never|change] default: always
-
-  slack:
-    recipients:
-      - "#ci"
-
     on_success: always
     on_failure: always
