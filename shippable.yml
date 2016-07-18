@@ -38,8 +38,8 @@ integrations:
       on_failure: always  # options: [always|never|change] default: always
       on_start: never     # options: [always|never|change] default: always
 
-    - integrationName: Slack
-      type: Slack
+    - integrationName: Shippable-Slack
+      type: slack
       recipients:
         - "#ci"
       branches:
