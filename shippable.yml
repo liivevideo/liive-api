@@ -1,6 +1,6 @@
 env:
   global:
-    - APP_NAME=live-api
+    - APP_NAME=liive-api
 
 language: node_js
 
