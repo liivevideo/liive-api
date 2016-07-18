@@ -26,24 +26,29 @@ build:
 
 integrations:
   notifications:
-    - integrationName: email
-      type: email
-      recipients:
-        - robb@liivevideo.com
-      branches:
-        only:
-          - master
-          - develop
-      on_success: always  # options: [always|never|change] default: always
-      on_failure: always  # options: [always|never|change] default: always
-      on_start: never     # options: [always|never|change] default: always
-
     - integrationName: CI-Notification
       type: slack
-      branches:
-        only:
-          - master
-          - develop
-      on_success: always
-      on_failure: always
-      on_start: always
+
+notifications:
+  email:
+    recipients:
+      - robb@liivevideo.com
+    branches:
+      only:
+        - master
+        - develop
+    on_success: always  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: never     # options: [always|never|change] default: always
+
+  slack:
+    recipients:
+      - "#ci"
+    branches:
+      only:
+        - master
+        - develop
+    on_success: always
+    on_failure: always
+    on_start: always
+
