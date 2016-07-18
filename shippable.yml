@@ -40,8 +40,6 @@ integrations:
 
     - integrationName: CI-Notification
       type: slack
-      recipients:
-        - "#ci"
       branches:
         only:
           - master
