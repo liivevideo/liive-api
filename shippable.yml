@@ -11,7 +11,8 @@ build:
   pre_ci:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
-
+    - npm install
+    
   ci:
     - npm test
     - npm run-script test-shippable
