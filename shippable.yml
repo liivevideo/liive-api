@@ -7,23 +7,17 @@ language: node_js
 node_js:
    - "6.2.2"
 
-build:
-  ci:
-    - npm test
-
 before_script:
-  - npm install
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
 script:
+  - npm test
   - npm run-script test-shippable
 
 after_script:
   - npm run-script test-coverage
   - npm run-script shippable-cobertura
-
-on_success:
   - git push -f heroku master
 
 notifications:
