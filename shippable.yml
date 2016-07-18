@@ -15,9 +15,9 @@ build:
   ci:
     - npm install
     - npm test
-    - npm run-script test-shippable
 
   post_ci:
+    - npm run-script test-shippable
     - npm run-script test-coverage
     - npm run-script shippable-cobertura
 
@@ -25,6 +25,8 @@ build:
     - git push -f git@heroku.com:$APP_NAME-$BRANCH.git master
 
   on_failure:
+    - npm run-script test-shippable
+    - npm run-script test-coverage
     - npm run-script shippable-cobertura
 
 integrations:
