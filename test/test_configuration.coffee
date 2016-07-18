@@ -7,4 +7,3 @@ describe 'Configuration', () ->
         config = require '../config/configuration'
         config.env.should.be.equal('local')
         done()
-        
