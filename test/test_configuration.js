@@ -7,10 +7,16 @@
   assert = require('assert');
 
   describe('Configuration', function() {
-    return it('configures the application correctly.', function(done) {
+    it('configures the application correctly.', function(done) {
       var config;
       config = require('../config/configuration');
       config.env.should.be.equal('local');
+      return done();
+    });
+    return it('test fails', function(done) {
+      var config;
+      config = require('../config/configuration');
+      config.env.should.be.equal('false');
       return done();
     });
   });
